@@ -68,7 +68,7 @@ public interface Collection<E> extends Iterable<E> {
      * @param c 指定集合
      * @return 如果此集合包含指定集合中的所有元素，则返回true
      */
-    boolean containsAll(java.util.Collection<?> c);
+    boolean containsAll(Collection<?> c);
 
     /**
      * 添加指定集合中的所有元素
@@ -76,7 +76,7 @@ public interface Collection<E> extends Iterable<E> {
      * @param c 指定集合
      * @return 添加成功返回true
      */
-    boolean addAll(java.util.Collection<? extends E> c);
+    boolean addAll(Collection<? extends E> c);
 
     /**
      * 刪除指定集合中的所有元素
@@ -84,7 +84,7 @@ public interface Collection<E> extends Iterable<E> {
      * @param c 指定集合
      * @return 刪除成功返回true
      */
-    boolean removeAll(java.util.Collection<?> c);
+    boolean removeAll(Collection<?> c);
 
     /**
      * 清空集合
